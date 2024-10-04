@@ -7,26 +7,32 @@
     <title>Black&White</title>
     <meta name="keywords" content="game, gun">
     <meta name="description" content="">
+    <link rel="stylesheet" href="css/ex1.css">
 </head>
 <style>
     body{
         background: #00ccffb2;
     }
     .white{
-        color: #f00;
+        color: rgb(255, 255, 255);
     }
     #main{
         width: 800px;
         background: #ffffffb2;
         margin: 0 auto;
     }
+    header{
+    background: url("");
+    border: solid #fff 3px;
+    padding: 5px 0px 10px 0px; 
+    }
 </style>
 <body>
     <div id="main">
         <header id="header">
             <div id="logo">
-                <h1>Black & White</h1>
-                <h2>Slogan</h2>
+                <h1>Black & <span class="white">White</span></h1>
+                <h2 class="white">Slogan</h2>
             </div>
         </header>
         <div id="menu">
@@ -37,26 +43,32 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+        </div>
+        <article id="content">
+            <div id="left">
+                <div id="login">
+                    <h2>Login</h2>
+                    <form action="">
+                        <label for="account">Login name:</label>
+                        <input type="text" id="account">
+                        <label for="password">Password:</label>
+                        <input type="text" id="password">
+                        <input type="submit" value="Sumit">
+                    </form>
+                </div>
+                <div id="news">
+
+                </div>
+            </div>
+            <div id="right">
+
+            </div>
+        </article>
+        <footer id="footer">
+            <p>Copyright 2011 Flash Templates</p>
+            <p>Privacy Policy | Terms of Use | XHTML | CSS</p>
+        </footer>
     </div>
-    <article id="left">
-        <div id="left">
-            <div id="login">
-               <h2>Login</h2>
-               <form action="">
-                    <label for="account">Login name:</label>
-                    <input type="text" id="account">
-                    <label for="password">Password:</label>
-                    <input type="text" id="password">
-                    <input type="submit" value="Sumit">
-               </form>
-            </div>
-            <div id="news">
-
-            </div>
-        </div>
-        <div id="login">
-
-        </div>
-    </article>
 </body>
+
 </html>
